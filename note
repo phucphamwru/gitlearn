@@ -1,0 +1,83 @@
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git init
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ ls -al
+total 12
+drwxrwxr-x 3 phuc phuc 4096 Thg 2  26 09:25 .
+drwxrwxr-x 3 phuc phuc 4096 Thg 2  26 09:24 ..
+drwxrwxr-x 7 phuc phuc 4096 Thg 2  26 09:29 .git
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git add README.md
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git status
+On branch master
+
+No commits yet
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   README.md
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git commit -m 'Add README file'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'phuc@phuc-VirtualBox.(none)')
+
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git config --global user.email "phucpv62@wru.vn"
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git config --global user.name "CodersTokyo"
+
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git commit -m 'Add README file'
+[master (root-commit) 637f141] Add README file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+ 
+phuc@phuc-VirtualBox:~/Dev/1-commit$ ^C
+phuc@phuc-VirtualBox:~/Dev/1-commit$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+
+====
+git init : tao GIT - Repository
+git status: xem trang thai
+git add : them file vao Repo
+git comit : dong goi nhung thang thay doi - roi dan no 1 cai tem (ghi noi dung thay doi)
+
+file README de cho moi nguoi biet trong cai project do - project co tac dung gi.
+
+
+
+637f141:  la tem (ten commit)
+1 insertion(+) : 1 dong moi duoc them vao.
+mode 100644: Permision cua file.
+
+
