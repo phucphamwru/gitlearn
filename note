@@ -80,4 +80,51 @@ file README de cho moi nguoi biet trong cai project do - project co tac dung gi.
 1 insertion(+) : 1 dong moi duoc them vao.
 mode 100644: Permision cua file.
 
+git log: la xem lich su Commit.
+git show: hien thi noi dung file va cac thay doi trong file.
+git diff: xem noi dung thay doi cua cac modified.	
+
+
+
+
+
+
+
+
+working directory : phia local - moi truong ma ta truc tiep lam viec voi 				code.
+staging area	: khi "git add" thi file thay doi tu moi truong working 			directory sang moi truong staging.
+	+) Chi co nhung file nam trong staging erea moi duoc comit. -> 		nhay len moi truong git Repository.
+git repository	:
+
+
+
+
+git checkout: xoa bo nhung vung thay doi trong file, khi ma file do chua 			len staging - nghia la chua git.add^^
+
+git reset: back tro lai moi truong truoc do - tu moi truong Staging ve Working directory.
+
+
+
+git branching: tach nhanh.
++) git branch: hien thi cac nhanh dang ton tai
++) git checkout -b ,,,: vua checkout va tao ra nha'nh moi - va chuyen sang nha'nh do lam viec.
++) git checkout <branch>: de di chuyen sang nhanh khac lam viec
+	vd: git checkout master: tro sang nhanh Master lam viec.
++) git branch -D <ten branch> : de xoa branch do di.
+
+git merging: ghep nhanh.
++) git merge ...
+	vd: A <-- B (ghep nhanh B vao A)
+		B1. git checkout A :nhay sang nhanh A lam viec.
+		B2. git merge B :ghep nhanh B vao nhanh A.
+		
+
+git reset --soft <Id_commit> : file tro ve trang thai truoc khi duoc commit. (staged)
+git reset --mixed <ID_commit>: file tro ve trang thai working directory.
+git reset --hard <to_commit> : xoa han file do di.
+
+git revert Id_commit> : xoa bo nhung thay doi trong file day (nhung dau '+' duoc thay vao la dau '-')
+		
+		
+.gitignore: noi chua file hoac thu muc - khong duoc cho vao commit.
 
